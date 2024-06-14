@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct Assignment_StripeApp: App {
+    @State private var viewModel = ProductViewModal()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(ProductViewModal())
         }
     }
 }

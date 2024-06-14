@@ -18,3 +18,10 @@ struct Product: Codable, Hashable {
         return Product(image: "", price: 20, product_name: "hello", product_type: "macbook", tax: 20)
     }
 }
+
+struct AddProduct: Codable {
+    let message: String
+    let product_details: Product
+    let product_id: Int
+    let success: Bool
+}
