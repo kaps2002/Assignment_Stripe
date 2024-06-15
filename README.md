@@ -33,7 +33,8 @@ In this iOS App you can see the scroll thrrough the available products and searc
 - Build and run
 
 ## Screenshots
-- ![Alt text](https://drive.google.com/file/d/1D8Eh4tE-Mwe-l5VcaH0XrY04_p0Ucdne/view?usp=sharing "Home Page")
-- ![Alt text](https://drive.google.com/file/d/1ShVt0DyYurXBXC5C_xuJzumW0a-T9GQ_/view?usp=sharing "Search bar")
-- ![Alt text](https://drive.google.com/file/d/16w85DcrupxHiDWk3y1KRvPX285N4hAWH/view?usp=sharing "Add Prod View")
+<img width="415" alt="Screenshot 2024-06-15 at 11 57 50 AM" src="https://github.com/kaps2002/Assignment_Swipe/assets/87715967/ceb785e7-a1f6-4723-9751-eb86730bac49">
+<img width="423" alt="Screenshot 2024-06-15 at 11 56 47 AM" src="https://github.com/kaps2002/Assignment_Swipe/assets/87715967/5fce794d-139f-4713-83ca-8f311c4c79ee">
+<img width="422" alt="Screenshot 2024-06-15 at 11 56 06 AM" src="https://github.com/kaps2002/Assignment_Swipe/assets/87715967/a6b71d1a-7fa7-469f-8f70-e7f24b75ff37">
+
 
