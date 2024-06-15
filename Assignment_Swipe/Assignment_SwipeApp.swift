@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Assignment_StripeApp: App {
+struct Assignment_SwipeApp: App {
     @State private var viewModel = ProductViewModal()
 
     var body: some Scene {
