@@ -35,7 +35,7 @@ struct ContentView: View {
                     Button(action: {
                         isAddProdViewActive = true
                     }, label: {
-                        Text("Add your Product")
+                        Text("Add new Product")
                             .font(.headline)
                             .foregroundStyle(.white)
                             .padding([.top, .bottom], 15)

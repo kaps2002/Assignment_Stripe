@@ -22,7 +22,7 @@ struct AddProdView: View {
                 VStack(spacing: 4) {
                     HStack() {
                         Text("Product Type")
-                            .fontWeight(.bold)
+                            .fontWeight(.semibold)
                         Spacer()
                         Picker("Product Type", selection: $viewModel.product_type) {
                             ForEach(ProductType.allCases, id: \.self) { type in
@@ -33,6 +33,7 @@ struct AddProdView: View {
                     
                     VStack(alignment: .leading) {
                         TextField("Product Name", text: $viewModel.product_name)
+                            .padding(.horizontal, 10)
                             .foregroundColor(.black)
                             .frame(height: 45)
                             .autocapitalization(.none)
@@ -52,6 +53,8 @@ struct AddProdView: View {
                         
                         
                         TextField("Price", text: $viewModel.price)
+                            .padding(.horizontal, 10)
+
                             .frame(height: 45)
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
@@ -70,6 +73,7 @@ struct AddProdView: View {
                         
                         
                         TextField("Taxrate", text: $viewModel.tax)
+                            .padding(.horizontal, 10)
                             .frame(height: 45)
                             .autocapitalization(.none)
                             .disableAutocorrection(true)
@@ -89,7 +93,7 @@ struct AddProdView: View {
                     
                     HStack() {
                         Text("Product Image")
-                            .fontWeight(.bold)
+                            .fontWeight(.semibold)
                         Spacer()
                         if let image = selectedImage {
                             Image(uiImage: image)
@@ -126,9 +130,11 @@ struct AddProdView: View {
                         isAddProdViewActive = false
                     }, label: {
                         Image(systemName: "xmark")
+                            .padding(.horizontal, 10)
                             .imageScale(.large)
                             .foregroundColor(.secondary)
                     })
+                    
                 }
             })
             .padding(.top, 25)
