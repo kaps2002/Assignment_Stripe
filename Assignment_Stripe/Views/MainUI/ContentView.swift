@@ -32,9 +32,9 @@ struct ContentView: View {
                 
                 VStack {
                     Spacer()
-                    NavigationLink(isActive: $isAddProdViewActive) {
-                        AddProdView()
-                    } label: {
+                    Button(action: {
+                        isAddProdViewActive = true
+                    }, label: {
                         Text("Add your Product")
                             .font(.headline)
                             .foregroundStyle(.white)
@@ -42,12 +42,17 @@ struct ContentView: View {
                             .padding(.horizontal, 40)
                             .background(.blue)
                             .clipShape(Capsule())
-                    }
+                    })
                 }
             }
             .navigationTitle("Products ✨")
             .searchable(text: $searchTerm, prompt: "Search Products")
         }
+        .sheet(isPresented: $isAddProdViewActive, content: {
+            AddProdView(isAddProdViewActive: $isAddProdViewActive)
+                .presentationDetents([.height(500)])
+                .presentationDragIndicator(.visible)
+        })
         .padding(.top, -80)
         .task {
             viewModel.fetchProducts()

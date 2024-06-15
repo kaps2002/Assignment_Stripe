@@ -80,4 +80,6 @@ enum ProductType: String, CaseIterable {
     case clothing = "Clothing"
     case furniture = "Furniture"
     case books = "Books"
+    case cosmetics = "Cosmetics"
+    case medicines = "Medicines"
 }

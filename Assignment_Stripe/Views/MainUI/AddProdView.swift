@@ -10,11 +10,11 @@ import PhotosUI
 
 struct AddProdView: View {
     @State private var prodviewModel = ProductViewModal()
-
     @State private var viewModel = AddProdViewModel()
     @State private var selectedImage: UIImage? = nil
     @State private var showToast = false
     @State private var toastMsg = ""
+    @Binding var isAddProdViewActive: Bool
     
     var body: some View {
         NavigationStack {
@@ -120,6 +120,17 @@ struct AddProdView: View {
                 })
                 
             }
+            .toolbar(content: {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        isAddProdViewActive = false
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .imageScale(.large)
+                            .foregroundColor(.secondary)
+                    })
+                }
+            })
             .padding(.top, 25)
             .padding(.horizontal, 15)
             .navigationTitle("Add Product 🚀")
@@ -155,5 +166,5 @@ struct AddProdView: View {
 }
 
 #Preview {
-    AddProdView()
+    AddProdView(isAddProdViewActive: .constant(true))
 }
