@@ -1,10 +1,9 @@
-# Project Name
+# Assignment_Swipe
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-iOS-blue.svg)
 ![Swift](https://img.shields.io/badge/swift-5.0-orange.svg)
 
-A brief description of your project and what it does.
+In this iOS App you can see the scroll thrrough the available products and search over them. In this you can also add your own product of your choice of various categories.
 
 ## Table of Contents
 
